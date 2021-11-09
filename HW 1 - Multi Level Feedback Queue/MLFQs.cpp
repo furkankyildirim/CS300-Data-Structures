@@ -59,7 +59,7 @@ void MLFQs::timePeriot(){
                 
                 // moves process to the topmost queue
                 data[current].dequeue(process);
-                process.qid = 4;
+                process.qid = queueSize;
                 data[queueSize-1].enqueue(process);
                 
                 // prints result
@@ -131,7 +131,7 @@ void MLFQs::operate(){
             else if (line != "-") {
                 
                 // sets the process query level
-                process.qid = process.qid >= 1 ? process.qid - stoi(line) : process.qid;
+                process.qid = process.qid > 1 ? process.qid - stoi(line) : process.qid;
                 data[process.qid - 1].enqueue(process);
                 
                 // prints result

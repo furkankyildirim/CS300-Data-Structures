@@ -156,9 +156,8 @@ void BVHTree::removeBVHMember(std::string name){
 
 void BVHTree::moveBVHMember(std::string name, AABB newLocation){
     BVHTreeNode * node = map[name];
-    AABB temp = newLocation + node->parent->aabb;
     
-    if (temp.getArea() - node->parent->aabb.getArea() == 0) {
+    if (node->parent != NULL && (newLocation + node->parent->aabb).getArea() - node->parent->aabb.getArea() == 0) {
         node->aabb = newLocation;
         //resize(node->parent);
     }

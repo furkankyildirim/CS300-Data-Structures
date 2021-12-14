@@ -1,0 +1,5 @@
+Current tree:
++ branch || min = (1, 0), max = (5, 8), Area = 32
+  - R - leaf: head || min = (3, 7), max = (5, 8), Area = 2
+  - L - leaf: left-leg || min = (1, 0), max = (2, 3), Area = 3
+

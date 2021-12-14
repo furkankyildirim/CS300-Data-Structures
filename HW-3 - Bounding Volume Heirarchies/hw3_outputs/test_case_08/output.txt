@@ -1,0 +1,15 @@
+Projectile (0, 5), (2, 7)
+Collides with: 
+Projectile (1, 2), (4, 6)
+Collides with: A2, A3, A4, A5
+Current tree:
++ branch || min = (0, 0), max = (5, 9), Area = 45
+  + branch || min = (3, 2), max = (5, 9), Area = 14
+    - R - leaf: A1 || min = (3, 7), max = (4, 9), Area = 2
+    + branch || min = (3, 2), max = (5, 6), Area = 8
+      - R - leaf: A3 || min = (3, 2), max = (5, 6), Area = 8
+      - L - leaf: A5 || min = (3, 2), max = (5, 5), Area = 6
+  + branch || min = (0, 0), max = (4, 4), Area = 16
+    - R - leaf: A2 || min = (1, 0), max = (3, 3), Area = 6
+    - L - leaf: A4 || min = (0, 0), max = (4, 4), Area = 16
+

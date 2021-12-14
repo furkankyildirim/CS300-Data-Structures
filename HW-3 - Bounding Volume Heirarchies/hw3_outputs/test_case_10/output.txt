@@ -1,0 +1,35 @@
+Current tree:
++ branch || min = (0, 1), max = (9, 9), Area = 72
+  + branch || min = (0, 2), max = (9, 5), Area = 27
+    - R - leaf: A1 || min = (0, 2), max = (2, 4), Area = 4
+    - L - leaf: A5 || min = (7, 2), max = (9, 5), Area = 6
+  + branch || min = (2, 1), max = (9, 9), Area = 56
+    - R - leaf: A2 || min = (2, 1), max = (4, 3), Area = 4
+    + branch || min = (2, 3), max = (9, 9), Area = 42
+      - R - leaf: A3 || min = (3, 3), max = (5, 6), Area = 6
+      + branch || min = (2, 7), max = (9, 9), Area = 14
+        - R - leaf: A4 || min = (2, 7), max = (4, 9), Area = 4
+        - L - leaf: A6 || min = (7, 7), max = (9, 9), Area = 4
+
+Projectile (1, 2), (4, 6)
+Collides with: A1, A2, A3
+Projectile (4, 5), (6, 7)
+Collides with: A3, A4
+Moved the A3 to the location (4, 5), (6, 8)
+Current tree:
++ branch || min = (0, 1), max = (9, 9), Area = 72
+  + branch || min = (0, 2), max = (9, 5), Area = 27
+    - R - leaf: A1 || min = (0, 2), max = (2, 4), Area = 4
+    - L - leaf: A5 || min = (7, 2), max = (9, 5), Area = 6
+  + branch || min = (2, 1), max = (9, 9), Area = 56
+    - R - leaf: A2 || min = (2, 1), max = (4, 3), Area = 4
+    + branch || min = (2, 3), max = (9, 9), Area = 42
+      - R - leaf: A3 || min = (4, 5), max = (6, 8), Area = 6
+      + branch || min = (2, 7), max = (9, 9), Area = 14
+        - R - leaf: A4 || min = (2, 7), max = (4, 9), Area = 4
+        - L - leaf: A6 || min = (7, 7), max = (9, 9), Area = 4
+
+Projectile (3, 5), (5, 9)
+Collides with: A3, A4
+Projectile (5, 4), (8, 6)
+Collides with: A3, A5

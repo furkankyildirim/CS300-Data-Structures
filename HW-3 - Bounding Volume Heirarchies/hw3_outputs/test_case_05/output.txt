@@ -1,0 +1,11 @@
+Projectile (2, 4), (4, 6)
+Collides with: 
+Projectile (1, 3), (2, 7)
+Collides with: head, left-leg
+Current tree:
++ branch || min = (1, 0), max = (5, 8), Area = 32
+  - R - leaf: head || min = (2, 7), max = (4, 8), Area = 2
+  + branch || min = (1, 0), max = (5, 3), Area = 12
+    - R - leaf: right-leg || min = (4, 0), max = (5, 3), Area = 3
+    - L - leaf: left-leg || min = (1, 0), max = (2, 3), Area = 3
+

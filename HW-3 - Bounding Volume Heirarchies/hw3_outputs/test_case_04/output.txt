@@ -1,0 +1,15 @@
+Current tree:
++ branch || min = (1, 0), max = (5, 8), Area = 32
+  - R - leaf: head || min = (2, 7), max = (4, 8), Area = 2
+  + branch || min = (1, 0), max = (5, 3), Area = 12
+    - R - leaf: right-leg || min = (4, 0), max = (5, 3), Area = 3
+    - L - leaf: left-leg || min = (1, 0), max = (2, 3), Area = 3
+
+Moved the left-leg to the location (5, 6), (6, 9)
+Current tree:
++ branch || min = (2, 0), max = (6, 9), Area = 36
+  + branch || min = (2, 6), max = (6, 9), Area = 12
+    - R - leaf: head || min = (2, 7), max = (4, 8), Area = 2
+    - L - leaf: left-leg || min = (5, 6), max = (6, 9), Area = 3
+  - L - leaf: right-leg || min = (4, 0), max = (5, 3), Area = 3
+

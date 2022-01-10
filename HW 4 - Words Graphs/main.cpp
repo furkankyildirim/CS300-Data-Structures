@@ -94,7 +94,7 @@ void findPath(vector<vector<int>> adjList, int source, int target, int size) {
 }
 
 int main() {
-    ifstream file("test.txt");
+    ifstream file("words.txt");
     string start, end, key, word;
     unordered_map<string, int> hash;
     
